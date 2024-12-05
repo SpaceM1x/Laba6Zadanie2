@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <!-- Фото сотрудника -->
+    <ImageView
+        android:id="@+id/employeeImage"
+        android:layout_width="316dp"
+        android:layout_height="170dp"
+        android:layout_gravity="center"
+        android:src="@drawable/employee1" />
+    <!-- ФИО сотрудника -->
+    <EditText
+        android:id="@+id/employeeName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ФИО"
+        android:inputType="text" />
+    <!-- Должность сотрудника -->
+    <EditText
+        android:id="@+id/employeePosition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Должность"
+        android:inputType="text" />
+    <!-- Кнопка сохранения -->
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Сохранить" />
+    <!-- Кнопка для выбора другого сотрудника -->
+    <Button
+        android:id="@+id/selectEmployeeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Выбор сотрудника"
+        android:visibility="invisible"
+        />
+</LinearLayout>
