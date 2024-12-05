@@ -4,18 +4,15 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <!-- Контейнер для первого фрагмента (отображение данных сотрудника) -->
+    <!-- Контейнер для SelectionFragment -->
+    <FrameLayout
+        android:id="@+id/selectionFragmentContainer"
+        android:layout_width="368dp"
+        android:layout_height="match_parent" />
+
+    <!-- Контейнер для DetailsFragment -->
     <FrameLayout
         android:id="@+id/detailsFragmentContainer"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1" />
-    <!-- Контейнер для фрагмента выбора -->
-    <FrameLayout
-        android:id="@+id/selectionFragmentContainer"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:visibility="gone"
-        />
+        android:layout_height="match_parent" />
 </LinearLayout>
